@@ -3,9 +3,9 @@ var TimeConv = require('./TimeConv');
 
 function getOSinfo() {
     var type = os.type();
-    if(type === 'Darwin') {
+    if (type === 'Darwin') {
         type = 'OSX';
-    } else if(type === 'Windows_NT') {
+    } else if (type === 'Windows_NT') {
         type = 'Windows';
     }
     var release = os.release();
@@ -15,7 +15,7 @@ function getOSinfo() {
     console.log('System:', type);
     console.log('Release:', release);
     console.log('CPU model:', cpu);
-	console.log(TimeConv.format(uptime));
+    console.log(TimeConv.format(uptime));
     console.log('User name:', userInfo.username);
     console.log('Home dir:', userInfo.homedir);
 }
